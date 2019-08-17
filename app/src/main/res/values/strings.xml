@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">All In One</string>
+    <string-array name="unit_options">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Time</item>
+    </string-array>
+    <string-array name="Length">
+        <item>Meter</item>
+        <item>CentiMeter</item>
+    </string-array>
+    <string-array name="Weight">
+        <item>Gram</item>
+        <item>KiloGram</item>
+    </string-array>
+    <string-array name="Time">
+        <item>Second</item>
+        <item>Minute</item>
+    </string-array>
+</resources>
