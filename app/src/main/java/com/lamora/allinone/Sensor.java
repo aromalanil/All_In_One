@@ -1,8 +1,10 @@
 package com.lamora.allinone;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,6 +16,7 @@ public class Sensor extends AppCompatActivity {
         setContentView(R.layout.activity_sensor);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void check(View view) {
         ImageView acce =findViewById(R.id.accelerometer);
         ImageView gyro =findViewById(R.id.gyroscope);
