@@ -16,7 +16,7 @@
         </activity>
         <activity
             android:name=".Sensor"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Time"
             android:screenOrientation="portrait" />

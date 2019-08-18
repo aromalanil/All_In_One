@@ -10,11 +10,8 @@ import android.widget.TextView;
 
 public class Split_Bill extends AppCompatActivity {
 
-    int a=0,p=0,r=0;
-    MediaPlayer mp;
-    TextView result;
-    EditText amount;
-    EditText people;
+    private MediaPlayer mp;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_split__bill);
@@ -35,18 +32,18 @@ public class Split_Bill extends AppCompatActivity {
             mp.start();
 
         }
-        result = findViewById(R.id.result);
-        amount = findViewById(R.id.amount);
-        people = findViewById(R.id.people);
+        TextView result = findViewById(R.id.result);
+        EditText amount = findViewById(R.id.amount);
+        EditText people = findViewById(R.id.people);
         if((people.getText().toString().isEmpty())||(amount.getText().toString().isEmpty())){
             result.setText("Please Fill All The Fields");
         }
         else{
-            a = Integer.parseInt( amount.getText().toString() );
-            p = Integer.parseInt( people.getText().toString() );
+            int a = Integer.parseInt(amount.getText().toString());
+            int p = Integer.parseInt(people.getText().toString());
             if (p > 0) {
-                r = a / p;
-                result.setText("Each One Should Pay : Rs." + String.valueOf(r) + "/-");
+                int r = a / p;
+                result.setText("Each One Should Pay : Rs." + r + "/-");
             } else {
                 result.setText("Invalid Number Of People");
             }

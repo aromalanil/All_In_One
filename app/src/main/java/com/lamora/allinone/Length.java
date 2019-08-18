@@ -11,10 +11,13 @@ import android.widget.Toast;
 
 public class Length extends AppCompatActivity {
 
-    RadioGroup button_group;
-    EditText quantity;
-    TextView met,kmet,cmet;
-    float length,m=0,cm=0,km=0;
+    private RadioGroup button_group;
+    private EditText quantity;
+    private TextView met;
+    private TextView kmet;
+    private TextView cmet;
+    private float m=0;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_length);
@@ -31,27 +34,29 @@ public class Length extends AppCompatActivity {
             Toast.makeText(Length.this,"Please Enter A Value",Toast.LENGTH_LONG).show();
         }
         else {
-            length = Float.parseFloat( quantity.getText().toString() );
+            float length = Float.parseFloat(quantity.getText().toString());
             //Meter
+            float km = 0;
+            float cm = 0;
             if (selectedId == R.id.celsius_button) {
-                m=length;
+                m= length;
             }
             else if(selectedId == R.id.fahrenheit_button){
-                cm=length;
-                m=cm/100;
+                cm = length;
+                m= cm /100;
             }
             else if(selectedId == R.id.kelvin_button){
-                km=length;
-                m=km*1000;
+                km = length;
+                m= km *1000;
             }
             else{
                 Toast.makeText(Length.this,"Select a Unit",Toast.LENGTH_LONG).show();
             }
-            cm=m*100;
-            km=m/1000;
-            met.setText(String.valueOf(m)+" m");
-            kmet.setText(String.valueOf(km)+" km");
-            cmet.setText(String.valueOf(cm)+" cm");
+            cm =m*100;
+            km =m/1000;
+            met.setText(m +" m");
+            kmet.setText(km +" km");
+            cmet.setText(cm +" cm");
         }
     }
 }

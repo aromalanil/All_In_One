@@ -11,10 +11,13 @@ import android.widget.Toast;
 
 public class Time extends AppCompatActivity {
 
-    RadioGroup button_group;
-    EditText quantity;
-    TextView sec, mnt, hrs;
-    double time=0,s=0,m=0,h=0;
+    private RadioGroup button_group;
+    private EditText quantity;
+    private TextView sec;
+    private TextView mnt;
+    private TextView hrs;
+    private double m=0;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time);
@@ -30,27 +33,29 @@ public class Time extends AppCompatActivity {
             Toast.makeText(Time.this,"Please Enter A Value",Toast.LENGTH_LONG).show();
         }
         else {
-            time = Double.parseDouble( quantity.getText().toString() );
+            double time = Double.parseDouble(quantity.getText().toString());
             //Meter
+            double h = 0;
+            double s = 0;
             if (selectedId == R.id.celsius_button) {
                 s = time;
-                m=s/60;
+                m= s /60;
             }
             else if(selectedId == R.id.fahrenheit_button){
                 m = time;
             }
             else if(selectedId == R.id.kelvin_button){
                 h = time;
-                m = h*60;
+                m = h *60;
             }
             else{
                 Toast.makeText(Time.this,"Select a Unit",Toast.LENGTH_LONG).show();
             }
             h = m/60;
             s = m*60;
-            sec.setText(String.valueOf(s)+" sec");
-            mnt.setText(String.valueOf(m)+" mnt");
-            hrs.setText(String.valueOf(h)+" hrs");
+            sec.setText(s +" sec");
+            mnt.setText(m +" mnt");
+            hrs.setText(h +" hrs");
         }
     }
 }

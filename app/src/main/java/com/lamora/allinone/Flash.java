@@ -17,11 +17,11 @@ import android.widget.TextView;
 public class Flash extends AppCompatActivity {
 
 
-    ImageButton switch_on;
-    ImageButton switch_off;
-    TextView state;
-    ImageView glow;
-    boolean flashOn=false;
+    private ImageButton switch_on;
+    private ImageButton switch_off;
+    private TextView state;
+    private ImageView glow;
+    private boolean flashOn=false;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

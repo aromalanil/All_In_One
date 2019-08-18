@@ -11,10 +11,13 @@ import android.widget.Toast;
 
 public class Temperature extends AppCompatActivity {
 
-    RadioGroup button_group;
-    EditText quantity;
-    TextView cel, far, kel;
-    double temperature =0, c =0, f =0, k =0;
+    private RadioGroup button_group;
+    private EditText quantity;
+    private TextView cel;
+    private TextView far;
+    private TextView kel;
+    private double c =0;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temperature);
@@ -30,26 +33,28 @@ public class Temperature extends AppCompatActivity {
             Toast.makeText(Temperature.this,"Please Enter A Value",Toast.LENGTH_LONG).show();
         }
         else {
-            temperature = Double.parseDouble( quantity.getText().toString() );
+            double temperature = Double.parseDouble(quantity.getText().toString());
+            double k = 0;
+            double f = 0;
             if (selectedId == R.id.celsius_button) {
                 c = temperature;
             }
             else if(selectedId == R.id.fahrenheit_button){
                 f = temperature;
-                c=((f-32)*(5.0/9.0));
+                c=((f -32)*(5.0/9.0));
             }
             else if(selectedId == R.id.kelvin_button){
                 k = temperature;
-                c=(k-273.15);
+                c=(k -273.15);
             }
             else{
                 Toast.makeText(Temperature.this,"Select a Unit",Toast.LENGTH_LONG).show();
             }
-            k=c+273.15;
-            f=(c*1.8)+32;
-            cel.setText(String.valueOf(c)+" °C");
-            far.setText(String.valueOf(f)+" °F");
-            kel.setText(String.valueOf(k)+" K");
+            k =c+273.15;
+            f =(c*1.8)+32;
+            cel.setText(c +" °C");
+            far.setText(f +" °F");
+            kel.setText(k +" K");
         }
     }
 }

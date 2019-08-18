@@ -11,9 +11,9 @@ import java.util.Random;
 
 public class Coin_Toss extends AppCompatActivity {
 
-    MediaPlayer mp;
-    boolean t= false;
-    boolean h= false;
+    private MediaPlayer mp;
+    private boolean t= false;
+    private boolean h= false;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coin__toss);
@@ -34,7 +34,7 @@ public class Coin_Toss extends AppCompatActivity {
             mp.start();
         }
         if(n==0){
-            if(t==true){
+            if(t){
                 result.setText("The Toss is a Tail Again");
             }
             else {
@@ -44,7 +44,7 @@ public class Coin_Toss extends AppCompatActivity {
             h=false;
         }
         else if (n == 1){
-            if(h==true) {
+            if(h) {
                 result.setText("The Toss is a Head Again");
             }
             else{
