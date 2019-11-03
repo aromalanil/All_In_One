@@ -47,7 +47,7 @@ Helpfull in finding which all sensor does your device have.
 Useful in a dark place where a flashlight will be helpful.
 
 ## License
-
+```
 MIT License
 
 Copyright (c) 2019 Aromal Anil
@@ -69,4 +69,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+```
