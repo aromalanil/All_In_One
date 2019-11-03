@@ -1,5 +1,9 @@
 # All In One-Utility App
 
+![License](https://img.shields.io/github/license/aromalanil/All_In_One)
+![](https://img.shields.io/github/repo-size/aromalanil/All_In_One)
+![](https://img.shields.io/github/v/release/aromalanil/All_In_One)
+
 ![alt text](https://github.com/aromalanil/All_In_One/blob/master/art/App_Mockup.png "App Demo")
 
 
