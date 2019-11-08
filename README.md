@@ -25,7 +25,7 @@ This is a utility app with 5 tools build into it namely
 
 ## Utilities
 
-#### 1.SplitBill
+#### 1. SplitBill
 
 Splits the bill according to the number of people paying for it.
 
