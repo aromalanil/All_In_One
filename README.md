@@ -7,10 +7,11 @@
   
 </div>
 
+</br></br>
 
 ![App Mockup](https://github.com/aromalanil/All_In_One/blob/master/art/App_Mockup.png "App Demo")
 
-</br></br>
+</br>
 
 ## 🚩 Disclaimer
 
