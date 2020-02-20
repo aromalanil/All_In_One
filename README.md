@@ -47,15 +47,18 @@ The possibilities are upto the imagination of the user.
 #### 3. Unit Conveter ⚖️
 
 A very usefull tool to convert length, weight, time and temperature to different units.
+
 </br>
 
 #### 4. Sensor Box ⚛️
 
 Helpfull in finding which all sensor does your device have.
+
 </br>
 
 #### 5. Flashlight 🔦
 Useful in a dark place where a flashlight will be helpful.
+
 </br>
 
 ## 📜 License
