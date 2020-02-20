@@ -1,20 +1,25 @@
-# All In One-Utility App
+<h1 align="center">📱 All In One-Utility App 📱</h1>
+<div align="center">
+  
+  <img src="https://img.shields.io/github/license/aromalanil/All_In_One">
+  <img src="https://img.shields.io/github/repo-size/aromalanil/All_In_One">
+  <img src="https://img.shields.io/github/v/release/aromalanil/All_In_One">
+  
+</div>
 
-![License](https://img.shields.io/github/license/aromalanil/All_In_One)
-![](https://img.shields.io/github/repo-size/aromalanil/All_In_One)
-![](https://img.shields.io/github/v/release/aromalanil/All_In_One)
 
-![alt text](https://github.com/aromalanil/All_In_One/blob/master/art/App_Mockup.png "App Demo")
+![App Mockup](https://github.com/aromalanil/All_In_One/blob/master/art/App_Mockup.png "App Demo")
 
 
 
-## Disclaimer
+## 🚩 Disclaimer
 
 This is my **first** Android Project.
 
 The sole purpose of this project was to learn more about Android Studio & Android App Development, and seing the outcome I see this as an absolute win, considering it was my first project.
+</br>
 
-## About
+## ⛲ Features
 
 This is a utility app with 5 tools build into it namely
 * SplitBill 
@@ -23,30 +28,36 @@ This is a utility app with 5 tools build into it namely
 * Sensor Box 
 * Flashlight
 
-## Utilities
 
-#### 1. SplitBill
+#### 1. SplitBill 💸
 
 Splits the bill according to the number of people paying for it.
 
-#### 2. Toss A Coin
+</br>
+
+#### 2. Toss A Coin 🎲
 
 Generates a random output of a coin toss : Head/Tail.   
 Comes in handy for killing boredom or in a cricket match.  
 The possibilities are upto the imagination of the user.  
 
-#### 3. Unit Conveter
+</br>
+
+#### 3. Unit Conveter ⚖️
 
 A very usefull tool to convert length, weight, time and temperature to different units.
+</br>
 
-#### 4. Sensor Box
+#### 4. Sensor Box ⚛️
 
 Helpfull in finding which all sensor does your device have.
+</br>
 
-#### 5. Flashlight
+#### 5. Flashlight 🔦
 Useful in a dark place where a flashlight will be helpful.
+</br>
 
-## License
+## 📜 License
 ```
 MIT License
 
